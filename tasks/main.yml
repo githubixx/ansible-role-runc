@@ -1,0 +1,11 @@
+---
+- name: Downloading runc
+  get_url:
+    url: "{{ runc_url }}"
+    dest: "{{ runc_bin_directory }}/runc"
+    checksum: "sha256:44d1ba01a286aaf0b31b4be9c6abc20deab0653d44ecb0d93b4d0d20eac3e0b6"
+    mode: "{{ runc_binary_mode }}"
+    owner: "{{ runc_owner | default(omit) }}"
+    group: "{{ runc_group | default(omit) }}"
+  tags:
+    - runc-download
