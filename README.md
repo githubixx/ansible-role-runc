@@ -1,7 +1,7 @@
 ansible-role-runc
 =================
 
-Ansible role to install runc.
+Ansible role to install [runc](https://github.com/opencontainers/runc). `runc` is a CLI tool for spawning and [running](https://github.com/opencontainers/runc#using-runc) containers on Linux according to the OCI specification.
 
 Role Variables
 --------------
@@ -42,6 +42,25 @@ Example Playbook
 - hosts: your-host
   roles:
     - githubixx.runc
+```
+
+Testing
+-------
+
+This role has a small test setup that is created using [Molecule](https://github.com/ansible-community/molecule), libvirt (vagrant-libvirt) and QEMU/KVM. Please see my blog post [Testing Ansible roles with Molecule, libvirt (vagrant-libvirt) and QEMU/KVM](https://www.tauceti.blog/posts/testing-ansible-roles-with-molecule-libvirt-vagrant-qemu-kvm/) how to setup. The test configuration is [here](https://github.com/githubixx/ansible-role-runc/tree/master/molecule/kvm).
+
+Afterwards molecule can be executed:
+
+```bash
+molecule converge -s kvm
+```
+
+This will setup a few virtual machines (VM) with different supported Linux operating systems and installs `runc`.
+
+To clean up run
+
+```bash
+molecule destroy -s kvm
 ```
 
 License
