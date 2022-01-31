@@ -17,6 +17,8 @@ driver:
 platforms:
   - name: test-runc-ubuntu2004
     box: generic/ubuntu2004
+    groups:
+      - ubuntu
     interfaces:
       - auto_config: true
         network_name: private_network
@@ -24,6 +26,8 @@ platforms:
         ip: 192.168.10.10
   - name: test-runc-ubuntu1804
     box: generic/ubuntu1804
+    groups:
+      - ubuntu
     interfaces:
       - auto_config: true
         network_name: private_network
@@ -31,6 +35,8 @@ platforms:
         ip: 192.168.10.20
   - name: test-runc-arch
     box: archlinux/archlinux
+    groups:
+      - archlinux
     interfaces:
       - auto_config: true
         network_name: private_network
@@ -53,4 +59,4 @@ scenario:
 
 verifier:
   name: ansible
-  enabled: False
+  enabled: true
