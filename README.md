@@ -3,12 +3,17 @@ ansible-role-runc
 
 Ansible role to install [runc](https://github.com/opencontainers/runc). `runc` is a CLI tool for spawning and [running](https://github.com/opencontainers/runc#using-runc) containers on Linux according to the OCI specification.
 
+Changelog
+---------
+
+see [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/CHANGELOG.md)
+
 Role Variables
 --------------
 
 ```yaml
 # runc version to install
-runc_version: "1.0.2"
+runc_version: "1.1.0"
 
 # Where to install "runc" binaries.
 runc_bin_directory: "/usr/local/bin"
@@ -31,8 +36,8 @@ runc_archive: "runc.{{ runc_arch }}"
 # The runc download URL (normally no need to change it)
 runc_url: "https://github.com/opencontainers/runc/releases/download/v{{ runc_version }}/{{ runc_archive }}"
 
-# SHA256 checksum (see: https://github.com/opencontainers/runc/releases/download/v1.0.2/runc.sha256sum)
-runc_checksum: "sha256:44d1ba01a286aaf0b31b4be9c6abc20deab0653d44ecb0d93b4d0d20eac3e0b6"
+# SHA256 checksum (normally no need to change it / see: https://github.com/opencontainers/runc/releases)
+runc_checksum: "sha256:https://github.com/opencontainers/runc/releases/download/v{{ runc_version }}/runc.sha256sum"
 ```
 
 Example Playbook
@@ -55,7 +60,11 @@ Afterwards molecule can be executed:
 molecule converge -s kvm
 ```
 
-This will setup a few virtual machines (VM) with different supported Linux operating systems and installs `runc`.
+This will setup a few virtual machines (VM) with different supported Linux operating systems and installs `runc`. A small verification step is also included:
+
+```bash
+molecule verify -s kvm
+```
 
 To clean up run
 
