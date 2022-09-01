@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1+1.1.4
+
+- update `runc_version` to `1.1.4`
+
 ## 0.2.0+1.1.0
 
 - **BREAKING**: `runc_checksum` isn't a static sha256 sum anymore. It's pointing to the `sha256sum` URL now of a specific release. So it doesn't needs to be adjusted anymore with every new release. The task just downloads the `runc.sha256sum` file and compares checksums.

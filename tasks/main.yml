@@ -1,6 +1,6 @@
 ---
 - name: Downloading runc
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ runc_url }}"
     dest: "{{ runc_bin_directory }}/runc"
     checksum: "{{ runc_checksum }}"
