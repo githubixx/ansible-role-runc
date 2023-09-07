@@ -10,8 +10,8 @@ galaxy_info:
     - name: ArchLinux
     - name: Ubuntu
       versions:
-        - bionic
-        - focal
+        - "focal"
+        - "jammy"
   galaxy_tags:
     - runc
     - runtime

@@ -4,6 +4,8 @@
 
 - update runc to `1.1.9`
 - Molecule: rename scenario from `kvm` to `default`
+- remove support for Ubuntu 18.04 (reached EOL)
+- added support for Ubuntu 22.04
 
 ## 0.2.1+1.1.4
 

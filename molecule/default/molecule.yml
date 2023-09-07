@@ -1,5 +1,5 @@
 ---
-# Copyright (C) 2021 Robert Wimmer
+# Copyright (C) 2021-2023 Robert Wimmer
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 dependency:
@@ -23,8 +23,8 @@ platforms:
         network_name: private_network
         type: static
         ip: 192.168.10.10
-  - name: test-runc-ubuntu1804
-    box: generic/ubuntu1804
+  - name: test-runc-ubuntu2204
+    box: generic/ubuntu2204
     memory: 2048
     cpus: 2
     groups:
