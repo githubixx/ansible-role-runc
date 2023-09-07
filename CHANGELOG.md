@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0+1.1.9
+
+- update runc to `1.1.9`
+- Molecule: rename scenario from `kvm` to `default`
+
 ## 0.2.1+1.1.4
 
 - update `runc_version` to `1.1.4`
