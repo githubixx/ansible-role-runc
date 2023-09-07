@@ -10,13 +10,12 @@ driver:
   provider:
     name: libvirt
     type: libvirt
-    options:
-      memory: 192
-      cpus: 2
 
 platforms:
   - name: test-runc-ubuntu2004
     box: generic/ubuntu2004
+    memory: 2048
+    cpus: 2
     groups:
       - ubuntu
     interfaces:
@@ -26,6 +25,8 @@ platforms:
         ip: 192.168.10.10
   - name: test-runc-ubuntu1804
     box: generic/ubuntu1804
+    memory: 2048
+    cpus: 2
     groups:
       - ubuntu
     interfaces:
@@ -35,6 +36,8 @@ platforms:
         ip: 192.168.10.20
   - name: test-runc-arch
     box: archlinux/archlinux
+    memory: 2048
+    cpus: 2
     groups:
       - archlinux
     interfaces:
@@ -49,7 +52,11 @@ provisioner:
     ansible_ssh_user: vagrant
     ansible_become: true
   log: true
-  lint: yamllint . && flake8 && ansible-lint
+  lint: |
+    set -e
+    yamllint .
+    flake8
+    ansible-lint .
 
 scenario:
   name: default
