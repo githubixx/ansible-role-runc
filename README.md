@@ -13,7 +13,7 @@ Role Variables
 
 ```yaml
 # runc version to install
-runc_version: "1.1.4"
+runc_version: "1.1.9"
 
 # Where to install "runc" binaries.
 runc_bin_directory: "/usr/local/bin"
@@ -52,24 +52,24 @@ Example Playbook
 Testing
 -------
 
-This role has a small test setup that is created using [Molecule](https://github.com/ansible-community/molecule), libvirt (vagrant-libvirt) and QEMU/KVM. Please see my blog post [Testing Ansible roles with Molecule, libvirt (vagrant-libvirt) and QEMU/KVM](https://www.tauceti.blog/posts/testing-ansible-roles-with-molecule-libvirt-vagrant-qemu-kvm/) how to setup. The test configuration is [here](https://github.com/githubixx/ansible-role-runc/tree/master/molecule/kvm).
+This role has a small test setup that is created using [Molecule](https://github.com/ansible-community/molecule), libvirt (vagrant-libvirt) and QEMU/KVM. Please see my blog post [Testing Ansible roles with Molecule, libvirt (vagrant-libvirt) and QEMU/KVM](https://www.tauceti.blog/posts/testing-ansible-roles-with-molecule-libvirt-vagrant-qemu-kvm/) how to setup. The test configuration is [here](https://github.com/githubixx/ansible-role-runc/tree/master/molecule/default).
 
 Afterwards molecule can be executed:
 
 ```bash
-molecule converge -s kvm
+molecule converge
 ```
 
 This will setup a few virtual machines (VM) with different supported Linux operating systems and installs `runc`. A small verification step is also included:
 
 ```bash
-molecule verify -s kvm
+molecule verify
 ```
 
 To clean up run
 
 ```bash
-molecule destroy -s kvm
+molecule destroy
 ```
 
 License
