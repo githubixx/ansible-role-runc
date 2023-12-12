@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0+1.1.10
+
+- change default value of `runc_bin_directory` from `/usr/local/bin` to `/usr/local/sbin`
+
 ## 0.4.1+1.1.10
 
 - update runc to `1.1.9`
