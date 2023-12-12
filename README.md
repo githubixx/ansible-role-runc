@@ -16,7 +16,7 @@ Role Variables
 runc_version: "1.1.10"
 
 # Where to install "runc" binaries.
-runc_bin_directory: "/usr/local/bin"
+runc_bin_directory: "/usr/local/sbin"
 
 # Owner/group of "runc" binary. If the variables are not set
 # the resulting binary will be owned by the current user.
