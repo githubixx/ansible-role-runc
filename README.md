@@ -1,15 +1,55 @@
-ansible-role-runc
-=================
+# ansible-role-runc
 
 Ansible role to install [runc](https://github.com/opencontainers/runc). `runc` is a CLI tool for spawning and [running](https://github.com/opencontainers/runc#using-runc) containers on Linux according to the OCI specification.
 
-Changelog
----------
+## Changelog
 
-see [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/CHANGELOG.md)
+**Change history:**
 
-Role Variables
---------------
+See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/CHANGELOG.md)
+
+**Recent changes:**
+
+## 0.5.1+1.1.11
+
+### UPDATE
+
+- update runc to `1.1.11`
+
+### OTHER CHANGES
+
+- adjust Github action because of Ansible Galaxy changes
+
+### MOLECULE
+
+- Change IP addresses
+
+## 0.5.0+1.1.10
+
+### BREAKING
+
+- change default value of `runc_bin_directory` from `/usr/local/bin` to `/usr/local/sbin`
+
+## Installation
+
+- Directly download from Github (Change into Ansible roles directory before cloning. You can figure out the role path by using `ansible-config dump | grep DEFAULT_ROLES_PATH` command):
+`git clone https://github.com/githubixx/ansible-role-runc.git githubixx.runc`
+
+- Via `ansible-galaxy` command and download directly from Ansible Galaxy:
+`ansible-galaxy install role githubixx.runc`
+
+- Create a `requirements.yml` file with the following content (this will download the role from Github) and install with
+`ansible-galaxy role install -r requirements.yml` (change `version` if needed):
+
+```yaml
+---
+roles:
+  - name: githubixx.runc
+    src: https://github.com/githubixx/ansible-role-runc.git
+    version: 0.5.1+1.1.11
+```
+
+## Role Variables
 
 ```yaml
 # runc version to install
@@ -40,17 +80,15 @@ runc_url: "https://github.com/opencontainers/runc/releases/download/v{{ runc_ver
 runc_checksum: "sha256:https://github.com/opencontainers/runc/releases/download/v{{ runc_version }}/runc.sha256sum"
 ```
 
-Example Playbook
-----------------
+## Example Playbook
 
 ```yaml
-- hosts: your-host
+- hosts: runc
   roles:
     - githubixx.runc
 ```
 
-Testing
--------
+## Testing
 
 This role has a small test setup that is created using [Molecule](https://github.com/ansible-community/molecule), libvirt (vagrant-libvirt) and QEMU/KVM. Please see my blog post [Testing Ansible roles with Molecule, libvirt (vagrant-libvirt) and QEMU/KVM](https://www.tauceti.blog/posts/testing-ansible-roles-with-molecule-libvirt-vagrant-qemu-kvm/) how to setup. The test configuration is [here](https://github.com/githubixx/ansible-role-runc/tree/master/molecule/default).
 
@@ -72,12 +110,10 @@ To clean up run
 molecule destroy
 ```
 
-License
--------
+## License
 
 GNU GENERAL PUBLIC LICENSE Version 3
 
-Author Information
-------------------
+## Author Information
 
 [http://www.tauceti.blog](http://www.tauceti.blog)
