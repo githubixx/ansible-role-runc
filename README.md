@@ -13,7 +13,7 @@ Role Variables
 
 ```yaml
 # runc version to install
-runc_version: "1.1.10"
+runc_version: "1.1.11"
 
 # Where to install "runc" binaries.
 runc_bin_directory: "/usr/local/sbin"
