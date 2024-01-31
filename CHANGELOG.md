@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.2+1.1.12
+
+### UPDATE
+
+- update runc to `1.1.12`
+
 ## 0.5.1+1.1.11
 
 ### UPDATE
