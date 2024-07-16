@@ -52,14 +52,14 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 roles:
   - name: githubixx.runc
     src: https://github.com/githubixx/ansible-role-runc.git
-    version: 0.5.2+1.1.12
+    version: 0.5.3+1.1.13
 ```
 
 ## Role Variables
 
 ```yaml
 # runc version to install
-runc_version: "1.1.12"
+runc_version: "1.1.13"
 
 # Where to install "runc" binaries.
 runc_bin_directory: "/usr/local/sbin"
