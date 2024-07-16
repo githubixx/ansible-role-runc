@@ -10,6 +10,16 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 
 **Recent changes:**
 
+## 0.5.3+1.1.13
+
+### UPDATE
+
+- update runc to `1.1.13`
+
+### OTHER
+
+- add support for Ubuntu 24.04
+
 ## 0.5.2+1.1.12
 
 ### UPDATE
