@@ -10,6 +10,12 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 
 **Recent changes:**
 
+## 0.5.4+1.1.14
+
+### UPDATE
+
+- update runc to `1.1.14`
+
 ## 0.5.3+1.1.13
 
 ### UPDATE
@@ -25,26 +31,6 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 ### UPDATE
 
 - update runc to `1.1.12`
-
-## 0.5.1+1.1.11
-
-### UPDATE
-
-- update runc to `1.1.11`
-
-### OTHER CHANGES
-
-- adjust Github action because of Ansible Galaxy changes
-
-### MOLECULE
-
-- Change IP addresses
-
-## 0.5.0+1.1.10
-
-### BREAKING
-
-- change default value of `runc_bin_directory` from `/usr/local/bin` to `/usr/local/sbin`
 
 ## Installation
 
@@ -62,14 +48,14 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 roles:
   - name: githubixx.runc
     src: https://github.com/githubixx/ansible-role-runc.git
-    version: 0.5.3+1.1.13
+    version: 0.5.4+1.1.14
 ```
 
 ## Role Variables
 
 ```yaml
 # runc version to install
-runc_version: "1.1.13"
+runc_version: "1.1.14"
 
 # Where to install "runc" binaries.
 runc_bin_directory: "/usr/local/sbin"

@@ -1,11 +1,11 @@
 ---
-# Copyright (C) 2022 Robert Wimmer
+# Copyright (C) 2024 Robert Wimmer
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 - name: Verify setup
   hosts: all
   vars:
-    expected_output: "1.1.13"
+    expected_output: "1.1.14"
   tasks:
     - name: Execute runc version to capture output
       command: runc --version
