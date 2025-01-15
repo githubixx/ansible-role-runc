@@ -10,23 +10,25 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 
 **Recent changes:**
 
+## 0.6.0+1.2.4
+
+- **UPDATE**
+  - update runc to `1.2.4`
+
 ## 0.5.5+1.1.14
 
-### UPDATE
-
-- update `CHANGELOG.md`
+- **UPDATE**
+  - update `CHANGELOG.md`
 
 ## 0.5.4+1.1.14
 
-### UPDATE
-
-- update runc to `1.1.14`
+- **UPDATE**
+  - update runc to `1.1.14`
 
 ## 0.5.3+1.1.13
 
-### UPDATE
-
-- update runc to `1.1.13`
+- **UPDATE**
+  - update runc to `1.1.13`
 
 ### OTHER
 

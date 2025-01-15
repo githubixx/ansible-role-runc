@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.0+1.2.4
+
+- **UPDATE**
+  - update runc to `1.2.4`
+
 ## 0.5.5+1.1.14
 
 ### UPDATE
@@ -8,15 +13,13 @@
 
 ## 0.5.4+1.1.14
 
-### UPDATE
-
-- update runc to `1.1.14`
+- **UPDATE**
+  - update runc to `1.1.14`
 
 ## 0.5.3+1.1.13
 
-### UPDATE
-
-- update runc to `1.1.13`
+- **UPDATE**
+  - update runc to `1.1.13`
 
 ### OTHER
 
@@ -24,15 +27,13 @@
 
 ## 0.5.2+1.1.12
 
-### UPDATE
-
-- update runc to `1.1.12`
+- **UPDATE**
+  - update runc to `1.1.12`
 
 ## 0.5.1+1.1.11
 
-### UPDATE
-
-- update runc to `1.1.11`
+- **UPDATE**
+  - update runc to `1.1.11`
 
 ### OTHER CHANGES
 
