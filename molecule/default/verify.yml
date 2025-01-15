@@ -1,18 +1,18 @@
 ---
-# Copyright (C) 2024 Robert Wimmer
+# Copyright (C) 2024-2025 Robert Wimmer
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 - name: Verify setup
   hosts: all
   vars:
-    expected_output: "1.1.14"
+    expected_output: "1.2.4"
   tasks:
     - name: Execute runc version to capture output
-      command: runc --version
+      ansible.builtin.command: runc --version
       register: runc_version_output
       changed_when: false
 
     - name: Ensure runc version output contains correct version string
-      assert:
+      ansible.builtin.assert:
         that:
           - "expected_output in runc_version_output.stdout"

@@ -1,3 +1,8 @@
+<!--
+Copyright (C) 2021-2025 Robert Wimmer
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # ansible-role-runc
 
 Ansible role to install [runc](https://github.com/opencontainers/runc). `runc` is a CLI tool for spawning and [running](https://github.com/opencontainers/runc#using-runc) containers on Linux according to the OCI specification.
@@ -10,23 +15,25 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 
 **Recent changes:**
 
+## 0.6.0+1.2.4
+
+- **UPDATE**
+  - update runc to `1.2.4`
+
 ## 0.5.5+1.1.14
 
-### UPDATE
-
-- update `CHANGELOG.md`
+- **UPDATE**
+  - update `CHANGELOG.md`
 
 ## 0.5.4+1.1.14
 
-### UPDATE
-
-- update runc to `1.1.14`
+- **UPDATE**
+  - update runc to `1.1.14`
 
 ## 0.5.3+1.1.13
 
-### UPDATE
-
-- update runc to `1.1.13`
+- **UPDATE**
+  - update runc to `1.1.13`
 
 ### OTHER
 
@@ -54,14 +61,14 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 roles:
   - name: githubixx.runc
     src: https://github.com/githubixx/ansible-role-runc.git
-    version: 0.5.4+1.1.14
+    version: 0.6.0+1.2.4
 ```
 
 ## Role Variables
 
 ```yaml
 # runc version to install
-runc_version: "1.1.14"
+runc_version: "1.2.4"
 
 # Where to install "runc" binaries.
 runc_bin_directory: "/usr/local/sbin"
