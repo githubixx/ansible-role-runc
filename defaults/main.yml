@@ -1,6 +1,6 @@
 ---
 # runc version to install
-runc_version: "1.1.14"
+runc_version: "1.2.4"
 
 # Where to install "runc" binaries.
 runc_bin_directory: "/usr/local/sbin"
