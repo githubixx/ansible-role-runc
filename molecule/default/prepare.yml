@@ -20,16 +20,9 @@
         pacman -Sy
       changed_when: false
 
-    - name: Upgrade the whole system
-      ansible.builtin.raw: |
-        pacman --noconfirm -Su
-      args:
-        executable: /bin/bash
-      changed_when: false
-
     - name: Install Python
       ansible.builtin.raw: |
-        pacman -S --noconfirm python
+        pacman -S --noconfirm python openssl
       args:
         executable: /bin/bash
       changed_when: false

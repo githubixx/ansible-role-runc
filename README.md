@@ -15,6 +15,17 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 
 **Recent changes:**
 
+## 0.7.0+1.3.0
+
+- **UPDATE**
+  - update runc to `1.3.0`
+
+- **MOLECULE**
+  - Use `generic/arch` Vagrant box instead of `archlinux/archlinux` (no longer available)
+  - Install `openssl` package for Archlinux
+  - Removed Ubuntu 20.04 because reached end of life
+  - Removed 'Upgrade the whole system' task
+
 ## 0.6.0+1.2.4
 
 - **UPDATE**
@@ -24,26 +35,6 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 
 - **UPDATE**
   - update `CHANGELOG.md`
-
-## 0.5.4+1.1.14
-
-- **UPDATE**
-  - update runc to `1.1.14`
-
-## 0.5.3+1.1.13
-
-- **UPDATE**
-  - update runc to `1.1.13`
-
-### OTHER
-
-- add support for Ubuntu 24.04
-
-## 0.5.2+1.1.12
-
-### UPDATE
-
-- update runc to `1.1.12`
 
 ## Installation
 
@@ -61,14 +52,14 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 roles:
   - name: githubixx.runc
     src: https://github.com/githubixx/ansible-role-runc.git
-    version: 0.6.0+1.2.4
+    version: 0.7.0+1.3.0
 ```
 
 ## Role Variables
 
 ```yaml
 # runc version to install
-runc_version: "1.2.4"
+runc_version: "1.3.0"
 
 # Where to install "runc" binaries.
 runc_bin_directory: "/usr/local/sbin"
