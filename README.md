@@ -20,6 +20,12 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 - **UPDATE**
   - update runc to `1.3.0`
 
+- **MOLECULE**
+  - Use `generic/arch` Vagrant box instead of `archlinux/archlinux` (no longer available)
+  - Install `openssl` package for Archlinux
+  - Removed Ubuntu 20.04 because reached end of life
+  - Removed 'Upgrade the whole system' task
+
 ## 0.6.0+1.2.4
 
 - **UPDATE**
