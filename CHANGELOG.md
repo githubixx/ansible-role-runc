@@ -5,6 +5,11 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 # Changelog
 
+## 0.7.0+1.3.0
+
+- **UPDATE**
+  - update runc to `1.3.0`
+
 ## 0.6.0+1.2.4
 
 - **UPDATE**
