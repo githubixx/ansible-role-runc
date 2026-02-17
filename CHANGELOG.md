@@ -1,9 +1,14 @@
 <!--
-Copyright (C) 2021-2025 Robert Wimmer
+Copyright (C) 2021-2026 Robert Wimmer
 SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
 # Changelog
+
+## 0.8.1+1.4.0
+
+- **OTHER**
+  - remove `.ansible` directory and add it to `.gitignore`
 
 ## 0.8.0+1.4.0
 
