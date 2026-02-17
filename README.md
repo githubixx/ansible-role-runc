@@ -20,6 +20,9 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 - **OTHER**
   - remove `.ansible` directory and add it to `.gitignore`
 
+- **MOLECULE**
+  - use own [githubixx Vagrant boxes](https://portal.cloud.hashicorp.com/vagrant/discover/githubixx)
+
 ## 0.8.0+1.4.0
 
 - **UPDATE**
