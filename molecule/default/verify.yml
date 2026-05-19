@@ -73,7 +73,7 @@
 
         - name: Copy the host shell and its runtime libraries into the smoke test rootfs
           ansible.builtin.shell: |
-            set -eu
+            set -euo pipefail
             cp -L /bin/sh "{{ runc_bundle_dir.path }}/rootfs/bin/sh"
             ldd /bin/sh | awk '{for (i = 1; i <= NF; i++) if ($i ~ /^\//) print $i}' | sort -u | while read -r library; do
               cp --parents -L "$library" "{{ runc_bundle_dir.path }}/rootfs"
