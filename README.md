@@ -20,6 +20,9 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 - **UPDATE**
   - update runc to `1.4.2`
 
+- **OTHER**
+  - `.github/workflows/release.yml`: use folded multiline shell sequence to make YAML linter happy
+
 - **MOLECULE**
   - add more tests
 
@@ -112,7 +115,7 @@ runc_checksum: "sha256:https://github.com/opencontainers/runc/releases/download/
 
 ## Testing
 
-This role has a small test setup that is created using [Molecule](https://github.com/ansible-community/molecule), libvirt (vagrant-libvirt) and QEMU/KVM. Please see my blog post [Testing Ansible roles with Molecule, libvirt (vagrant-libvirt) and QEMU/KVM](https://www.tauceti.blog/posts/testing-ansible-roles-with-molecule-libvirt-vagrant-qemu-kvm/) how to setup. The test configuration is [here](https://github.com/githubixx/ansible-role-runc/tree/master/molecule/default).
+This role has a small test setup that is created using [Molecule](https://github.com/ansible-community/molecule), libvirt (vagrant-libvirt) and QEMU/KVM. Please see my blog post [Testing Ansible roles with Molecule, libvirt (vagrant-libvirt) and QEMU/KVM](https://www.tauceti.blog/posts/testing-ansible-roles-with-molecule-libvirt-vagrant-qemu-kvm/) how to setup. The test configuration is in [molecule/default](https://github.com/githubixx/ansible-role-runc/tree/master/molecule/default).
 
 Afterwards molecule can be executed:
 

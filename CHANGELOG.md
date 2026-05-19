@@ -10,6 +10,9 @@ SPDX-License-Identifier: GPL-3.0-or-later
 - **UPDATE**
   - update runc to `1.4.2`
 
+- **OTHER**
+  - `.github/workflows/release.yml`: use folded multiline shell sequence to make YAML linter happy
+
 - **MOLECULE**
   - add more tests
 
