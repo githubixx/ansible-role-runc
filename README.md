@@ -20,6 +20,9 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 - **UPDATE**
   - update runc to `1.4.2`
 
+- **MOLECULE**
+  - add more tests
+
 ## 0.8.1+1.4.0
 
 - **OTHER**
@@ -122,6 +125,8 @@ This will setup a few virtual machines (VM) with different supported Linux opera
 ```bash
 molecule verify
 ```
+
+The verification playbook checks the installed binary metadata, verifies the expected `runc` version and capabilities, and runs a minimal OCI smoke test to confirm that `runc` can execute a simple container workload.
 
 To clean up run
 
