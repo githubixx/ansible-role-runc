@@ -15,6 +15,11 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 
 **Recent changes:**
 
+## 0.8.2+1.4.2
+
+- **UPDATE**
+  - update runc to `1.4.2`
+
 ## 0.8.1+1.4.0
 
 - **OTHER**
@@ -44,16 +49,6 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
   - Removed Ubuntu 20.04 because reached end of life
   - Removed 'Upgrade the whole system' task
 
-## 0.6.0+1.2.4
-
-- **UPDATE**
-  - update runc to `1.2.4`
-
-## 0.5.5+1.1.14
-
-- **UPDATE**
-  - update `CHANGELOG.md`
-
 ## Installation
 
 - Directly download from Github (Change into Ansible roles directory before cloning. You can figure out the role path by using `ansible-config dump | grep DEFAULT_ROLES_PATH` command):
@@ -70,14 +65,14 @@ See full [CHANGELOG](https://github.com/githubixx/ansible-role-runc/blob/master/
 roles:
   - name: githubixx.runc
     src: https://github.com/githubixx/ansible-role-runc.git
-    version: 0.8.1+1.4.0
+    version: 0.8.2+1.4.2
 ```
 
 ## Role Variables
 
 ```yaml
 # runc version to install
-runc_version: "1.4.0"
+runc_version: "1.4.2"
 
 # Where to install "runc" binaries.
 runc_bin_directory: "/usr/local/sbin"
